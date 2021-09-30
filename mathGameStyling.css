@@ -1,0 +1,160 @@
+html{
+    height : 100%;
+   background: radial-gradient(circle,black,rgb(75, 75, 47), rgb(115, 156, 115));
+}
+
+#containBox{
+    height : 100%;
+    width : 95%;
+    background: linear-gradient(whitesmoke, blue);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px black;
+    position : relative;
+}
+
+#scoreBox{
+ 
+    background-color: rgb(41, 51, 109);
+    box-shadow: 3px 3px 10px rgb(66, 66, 121);
+    padding: 10px;
+    position: absolute; 
+    margin: 5px;
+    color: rgb(236, 103, 103);
+    right: 50px;
+}
+
+#correctAnswer{
+    position: absolute;
+    left: 250px;
+    background-color: green;
+    color: rgb(224, 180, 180);
+    padding: 11px;
+    display: none;
+}
+
+#wrongAnswer{
+    position: absolute;
+    left: 200px;
+    background-color: red;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#AlgebricQuestion{
+    background-color: rgb(22, 7, 241);
+    color: white;
+    border-color: black;
+    font-weight: bold;
+    margin: 50px auto 10px auto;
+    box-shadow: 4px 4px 4px rgb(87, 78, 78);
+    width: 450px;
+    height: 150px;
+    text-align:center;
+    font-size: 100px;
+    font-family:fantasy, sans-serif;
+}
+
+#clickCorrectAnswer{
+    width: 450px;
+    height: 50px;
+    background-color: bisque;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 5px 3px gray;
+    line-height: 45px;
+}
+
+#frameForBoxes{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    padding-left: 100px;
+}
+
+.box{
+    width : 60px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.8s;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.box:hover{
+    background: linear-gradient(to right, rgb(190, 29, 29), rgb(228, 163, 44));
+    color: rgb(44, 39, 39);
+    box-shadow: 10px 10px  black;
+}
+
+
+.box:active{
+    box-shadow: 0px 0px black;
+    top: 10px;
+}
+
+#startGameBox{
+    background: linear-gradient(to bottom left, rgb(163, 46, 46) 50%,rgb(143, 143, 245) 40%,rgb(153, 65, 65));
+    cursor: pointer;
+    width : 150px;
+    height : 30px;
+    text-align:center;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#startGameBox:active
+{
+    box-shadow: 0px 0px black;
+    top: 10px;
+}
+
+#startGameBox:hover
+{
+    background: linear-gradient(to bottom left, rgb(153, 28, 28) 50%,rgb(42, 42, 190) 40%,rgb(230, 215, 215));
+    color: whitesmoke;
+    box-shadow: 10px 10px  black;
+}
+
+#remainingTimeBox{
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    left: 60%;
+    color: white;
+    background: linear-gradient(to top right, rgb(22, 12, 65), rgb(42, 8, 136));
+    box-shadow: 7px 3px darkblue;
+    visibility: hidden;
+    display: inline-block;
+}
+
+#gameOverBox{
+    width: 85%;
+    height: 20%;
+    background: linear-gradient(to left,rgb(214, 214, 70),rgb(98, 151, 194));
+    color: rgb(77, 5, 5);
+    position: absolute;
+    font-size: 300%;
+    left: 10%;
+    top: 55%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+    padding: 5px;
+}
+
+
+
